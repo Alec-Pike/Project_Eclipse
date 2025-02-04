@@ -1,0 +1,12 @@
+# Ignore GameMaker temporary files and cache
+*.yyc
+*.log
+*.png
+*.ogg
+*.gml
+*.gmres
+*.gmez
+.yyp.lock
+config.json
+extensions/
+output/
