@@ -34,7 +34,9 @@
   },
   "name":"Project_Eclipse_Game",
   "resources":[
+    {"id":{"name":"player_Object","path":"objects/player_Object/player_Object.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"player_Sprite","path":"sprites/player_Sprite/player_Sprite.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
