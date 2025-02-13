@@ -31,9 +31,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"player_Sprite",
-    "path":"sprites/player_Sprite/player_Sprite.yy",
+    "name":"playerDown_Sprite",
+    "path":"sprites/playerDown_Sprite/playerDown_Sprite.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"playerDown_Sprite",
+    "path":"sprites/playerDown_Sprite/playerDown_Sprite.yy",
+  },
   "visible":true,
 }
