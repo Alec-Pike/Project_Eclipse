@@ -35,9 +35,11 @@
   "name":"Project_Eclipse_Game",
   "resources":[
     {"id":{"name":"player_Object","path":"objects/player_Object/player_Object.yy",},},
+    {"id":{"name":"solidWall_object","path":"objects/solidWall_object/solidWall_object.yy",},},
     {"id":{"name":"wall_Object","path":"objects/wall_Object/wall_Object.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"player_Sprite","path":"sprites/player_Sprite/player_Sprite.yy",},},
+    {"id":{"name":"solidWall_sprite","path":"sprites/solidWall_sprite/solidWall_sprite.yy",},},
     {"id":{"name":"wall_sprite","path":"sprites/wall_sprite/wall_sprite.yy",},},
   ],
   "resourceType":"GMProject",
