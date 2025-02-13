@@ -37,9 +37,14 @@ downKey = keyboard_check(ord("S"));
 		yspd = 0;
 	}
 	
+	
 	//move the player
 	x += xspd;
 	y += yspd;
+	
+	//depth
+	depth = -bbox_bottom;
+	
 #endregion
 
 //player aiming
