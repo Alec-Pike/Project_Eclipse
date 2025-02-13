@@ -26,6 +26,15 @@ downKey = keyboard_check(ord("S"));
 	xspd = lengthdir_x(_spd, moveDir);
 	yspd = lengthdir_y(_spd, moveDir);
 	
+	//add collisions for the walls that exist for pits, water
+	if place_meeting(x + xspd , y , wall_Object) {
+		xspd = 0;
+	}
+	
+	if place_meeting(x , y + yspd , wall_Object) {
+		yspd = 0;
+	}
+	
 	//move the player
 	
 	x += xspd;
