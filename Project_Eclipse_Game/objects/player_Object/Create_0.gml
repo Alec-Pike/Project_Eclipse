@@ -27,4 +27,9 @@ sprite[3] = playerDown_Sprite; //2 * 90 equals 270 degrees, straight down. 2 is 
 
 
 //weapon info
+
+	shootTimer = 0;
+	shootCooldown = 9; //9 frames
 	bulletObj = bullet_Object;
+	weaponLength = 19;
+	//weaponLength = sprite_get_bbox_right(bullet_Sprite);
