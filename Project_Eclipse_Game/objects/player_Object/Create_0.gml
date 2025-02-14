@@ -24,3 +24,7 @@ sprite[2] = playerLeft_Sprite;
 sprite[3] = playerDown_Sprite; //2 * 90 equals 270 degrees, straight down. 2 is the index of this array
 
 //sprite_index = sprite[face]; this disappears???
+
+
+//weapon info
+	bulletObj = bullet_Object;

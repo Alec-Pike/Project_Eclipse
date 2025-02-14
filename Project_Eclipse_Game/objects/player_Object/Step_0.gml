@@ -7,7 +7,7 @@ rightKey = keyboard_check(ord("D")); //if D is pressed
 leftKey = keyboard_check(ord("A"));
 upKey = keyboard_check(ord("W"));
 downKey = keyboard_check(ord("S"));
-
+shootKey = mouse_check_button(mb_left);
 
 // player movement
 #region
@@ -70,3 +70,17 @@ downKey = keyboard_check(ord("S"));
 	sprite_index = sprite[face];
 #endregion
 
+//shoot the weapon
+if (shootKey)
+{
+	//create the bullet
+	var _bulletInst = instance_create_depth(x,centerY, depth-100,bullet_Object);
+	//creating an instance of a bullet object
+	//and storing it's unique ID in _bulletInst
+	
+	//change the bullet's direction
+	with(_bulletInst) 
+	{
+		dir = other.aimDir; //other refers to another object, player in this case
+	}
+}
