@@ -46,16 +46,7 @@ sprite[3] = playerDown_Sprite; //2 * 90 equals 270 degrees, straight down. 2 is 
 		
 	}
 	
-	slowGun = {
-		
-		sprite : gun_Sprite, //all these variables belong to the 'weapon' struct
-		length : sprite_get_bbox_right(gun_Sprite),
-		bulletObj : bullet_Object,
-		cooldown : 30,
-		
-	}
-	
-	weapon = slowGun;
+	weapon = defaultGun;
 	
 	//you can use  these variables like:
 	//weapon.sprite;
