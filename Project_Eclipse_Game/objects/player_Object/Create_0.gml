@@ -51,6 +51,6 @@ sprite[3] = playerDown_Sprite; //2 * 90 equals 270 degrees, straight down. 2 is 
 	//you can use  these variables like:
 	//weapon.sprite;
 	
-	
-	
-	
+	// a couple more variables for dodging
+    dodgeTimer = 0;
+    dodgeLegth = 30; 

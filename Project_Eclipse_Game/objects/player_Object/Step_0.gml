@@ -9,6 +9,8 @@ upKey = keyboard_check(ord("W"));
 downKey = keyboard_check(ord("S"));
 shootKey = mouse_check_button(mb_left);
 
+dodgeKey = keyboard_check_pressed(vk_space);
+
 // player movement
 #region
 
@@ -94,4 +96,39 @@ if (shootKey && shootTimer <= 0)
 	{
 		dir = other.aimDir; //other refers to another object, player in this case
 	}
+}
+
+// dodge 
+if dodgeTimer > 0
+{
+    dodgeTimer--;
+}
+
+if (dodgeKey && dodgeTimer <= 0)
+{
+    // reset timer
+    dodgeTimer = 20;
+    
+    // repeat much of the same code for movement
+    xspd = lengthdir_x(dodgeLegth, moveDir);
+    yspd = lengthdir_y(dodgeLegth, moveDir);
+        
+    //add collisions for the walls that exist for pits, water
+    if place_meeting(x + xspd , y , wall_Object) {
+        xspd = 0;
+    }
+        
+    if place_meeting(x , y + yspd , wall_Object) {
+        yspd = 0;
+    }
+        
+    // create puff of dust
+    instance_create_layer(x, y, "Instances", dodgeDust_Object);
+    
+    //move the player
+    x += xspd;
+    y += yspd;
+        
+    //depth
+    depth = -bbox_bottom;
 }

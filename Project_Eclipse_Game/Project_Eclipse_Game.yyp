@@ -34,6 +34,7 @@
   "name":"Project_Eclipse_Game",
   "resources":[
     {"id":{"name":"bullet_Object","path":"objects/bullet_Object/bullet_Object.yy",},},
+    {"id":{"name":"dodgeDust_Object","path":"objects/dodgeDust_Object/dodgeDust_Object.yy",},},
     {"id":{"name":"player_Object","path":"objects/player_Object/player_Object.yy",},},
     {"id":{"name":"solidWall_object","path":"objects/solidWall_object/solidWall_object.yy",},},
     {"id":{"name":"wall_Object","path":"objects/wall_Object/wall_Object.yy",},},
@@ -41,6 +42,7 @@
     {"id":{"name":"custom_functions","path":"scripts/custom_functions/custom_functions.yy",},},
     {"id":{"name":"weapon_creation","path":"scripts/weapon_creation/weapon_creation.yy",},},
     {"id":{"name":"bullet_Sprite","path":"sprites/bullet_Sprite/bullet_Sprite.yy",},},
+    {"id":{"name":"dodgeDust_Sprite","path":"sprites/dodgeDust_Sprite/dodgeDust_Sprite.yy",},},
     {"id":{"name":"gun_Sprite","path":"sprites/gun_Sprite/gun_Sprite.yy",},},
     {"id":{"name":"playerDown_Sprite","path":"sprites/playerDown_Sprite/playerDown_Sprite.yy",},},
     {"id":{"name":"playerLeft_Sprite","path":"sprites/playerLeft_Sprite/playerLeft_Sprite.yy",},},
