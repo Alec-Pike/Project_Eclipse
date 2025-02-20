@@ -95,6 +95,7 @@ if (shootKey && shootTimer <= 0)
 	with(_bulletInst) 
 	{
 		dir = other.aimDir; //other refers to another object, player in this case
+		_bulletInst.image_angle = point_direction(x, y, mouse_x, mouse_y);
 	}
 }
 

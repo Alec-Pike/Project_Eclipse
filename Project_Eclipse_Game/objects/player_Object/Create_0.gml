@@ -12,7 +12,7 @@
 centerYOffset = -20; //distance away from the origin point on sprite
 centerY = y + centerYOffset; //set in step event, we need to get this dynamically
 
-weaponOffsetDist = 9;
+weaponOffsetDist = 3;
 aimDir = 0; //deetermines direction the player is facing
 
 
