@@ -1,19 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"ranger_Object",
+  "%Name":"EnemyExplosionMedium_Object",
   "eventList":[],
   "managed":true,
-  "name":"ranger_Object",
-  "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"EnemyParent_Object","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"propertyId":{"name":"hp","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"40",},
-  ],
+  "name":"EnemyExplosionMedium_Object",
+  "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
   "parentObjectId":{
-    "name":"EnemyParent_Object",
-    "path":"objects/EnemyParent_Object/EnemyParent_Object.yy",
+    "name":"specialEffectParent_Object",
+    "path":"objects/specialEffectParent_Object/specialEffectParent_Object.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"ranger_Sprite",
-    "path":"sprites/ranger_Sprite/ranger_Sprite.yy",
+    "name":"EnemyExplosionMedium_sprite",
+    "path":"sprites/EnemyExplosionMedium_sprite/EnemyExplosionMedium_sprite.yy",
   },
   "spriteMaskId":null,
   "visible":true,

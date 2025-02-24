@@ -1,19 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"ranger_Object",
+  "%Name":"pit_object",
   "eventList":[],
   "managed":true,
-  "name":"ranger_Object",
-  "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"EnemyParent_Object","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"propertyId":{"name":"hp","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"40",},
-  ],
+  "name":"pit_object",
+  "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
   "parentObjectId":{
-    "name":"EnemyParent_Object",
-    "path":"objects/EnemyParent_Object/EnemyParent_Object.yy",
+    "name":"wall_Object",
+    "path":"objects/wall_Object/wall_Object.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"ranger_Sprite",
-    "path":"sprites/ranger_Sprite/ranger_Sprite.yy",
+    "name":"pit_sprite",
+    "path":"sprites/pit_sprite/pit_sprite.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -99,13 +99,14 @@ if (shootKey && shootTimer <= 0)
 	}
 }
 
-// dodge 
+// dodging
+#region
 if dodgeTimer > 0
 {
     dodgeTimer--;
 }
 
-if (dodgeKey && dodgeTimer <= 0)
+if (dodgeKey && _spd > 0 && dodgeTimer <= 0)
 {
     // reset timer
     dodgeTimer = 20;
@@ -133,3 +134,4 @@ if (dodgeKey && dodgeTimer <= 0)
     //depth
     depth = -bbox_bottom;
 }
+#endregion
