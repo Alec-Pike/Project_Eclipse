@@ -1,20 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"DamageEnemy_Object",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"rangeGun_Object",
+  "eventList":[],
   "managed":true,
-  "name":"DamageEnemy_Object",
+  "name":"rangeGun_Object",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":{
-    "name":"DamageParent_Object",
-    "path":"objects/DamageParent_Object/DamageParent_Object.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"rangerGun_Sprite",
+    "path":"sprites/rangerGun_Sprite/rangerGun_Sprite.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

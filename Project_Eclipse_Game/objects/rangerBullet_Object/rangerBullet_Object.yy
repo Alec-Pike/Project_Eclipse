@@ -1,19 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"DamageEnemy_Object",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"rangerBullet_Object",
+  "eventList":[],
   "managed":true,
-  "name":"DamageEnemy_Object",
+  "name":"rangerBullet_Object",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
   "parentObjectId":{
-    "name":"DamageParent_Object",
-    "path":"objects/DamageParent_Object/DamageParent_Object.yy",
+    "name":"bullet_Object",
+    "path":"objects/bullet_Object/bullet_Object.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -32,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"rangerBullet_Sprite",
+    "path":"sprites/rangerBullet_Sprite/rangerBullet_Sprite.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
