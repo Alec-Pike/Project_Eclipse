@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"DamageEnemy_Object",
+  "%Name":"DamagePlayer_Object",
   "eventList":[],
   "managed":true,
-  "name":"DamageEnemy_Object",
+  "name":"DamagePlayer_Object",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
