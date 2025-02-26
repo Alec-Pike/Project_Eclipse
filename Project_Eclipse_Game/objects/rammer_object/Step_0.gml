@@ -21,7 +21,7 @@ if (hp <= 0) {
 // This line moves the enemy move_speed steps towards the goal
 // while avoiding all obstacles.
 // For the rammer (hovering enemy), just change the last param to solidWall_object
-mp_potential_step_object(goal.x, goal.y, move_speed, wall_Object);
+mp_potential_step_object(goal.x, goal.y, move_speed, solidWall_object);
 
 //sprite control
 #region

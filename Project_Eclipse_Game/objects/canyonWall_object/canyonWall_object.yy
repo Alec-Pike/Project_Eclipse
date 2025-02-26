@@ -1,18 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"wall_Object",
+  "%Name":"canyonWall_object",
   "eventList":[],
   "managed":true,
-  "name":"wall_Object",
+  "name":"canyonWall_object",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":{
-    "name":"canyonWall_object",
-    "path":"objects/canyonWall_object/canyonWall_object.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"canyonWall_sprite",
+    "path":"sprites/canyonWall_sprite/canyonWall_sprite.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

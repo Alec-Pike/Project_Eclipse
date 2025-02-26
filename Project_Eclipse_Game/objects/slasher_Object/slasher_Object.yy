@@ -6,6 +6,10 @@
   "name":"slasher_Object",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"EnemyParent_Object","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"propertyId":{"name":"hp","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"50",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"EnemyParent_Object","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"propertyId":{"name":"right_sprite","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"resource":{"name":"slasherRight_Sprite","path":"sprites/slasherRight_Sprite/slasherRight_Sprite.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"slasherRight_Sprite",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"EnemyParent_Object","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"propertyId":{"name":"up_sprite","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"resource":{"name":"slasherUp_Sprite","path":"sprites/slasherUp_Sprite/slasherUp_Sprite.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"slasherUp_Sprite",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"EnemyParent_Object","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"propertyId":{"name":"left_sprite","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"resource":{"name":"slasherLeft_Sprite","path":"sprites/slasherLeft_Sprite/slasherLeft_Sprite.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"slasherLeft_Sprite",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"EnemyParent_Object","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"propertyId":{"name":"down_sprite","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"resource":{"name":"slasherDown_Sprite","path":"sprites/slasherDown_Sprite/slasherDown_Sprite.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"slasherDown_Sprite",},
   ],
   "parent":{
     "name":"Objects",
@@ -33,8 +37,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"slasher_Sprite",
-    "path":"sprites/slasher_Sprite/slasher_Sprite.yy",
+    "name":"slasherDown_Sprite",
+    "path":"sprites/slasherDown_Sprite/slasherDown_Sprite.yy",
   },
   "spriteMaskId":null,
   "visible":true,

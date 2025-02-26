@@ -10,5 +10,5 @@ draw_self();
 //draw the weapon
 	if (aimDir >= 180 && aimDir < 360)
 	{
-	draw_my_weapon();
+	   draw_my_weapon();
 	}

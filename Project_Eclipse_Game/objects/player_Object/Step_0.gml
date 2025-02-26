@@ -31,12 +31,13 @@ dodgeKey = keyboard_check_pressed(vk_space);
 	xspd = lengthdir_x(_spd, moveDir);
 	yspd = lengthdir_y(_spd, moveDir);
 	
-	//add collisions for the walls that exist for pits, water
-	if place_meeting(x + xspd , y , wall_Object) {
+	//add collisions for the walls that exist for pits, rocks, and the map border
+    // canyonWall_object is the parent of the pits and rocks, so this covers everything
+	if place_meeting(x + xspd , y , canyonWall_object) {
 		xspd = 0;
 	}
 	
-	if place_meeting(x , y + yspd , wall_Object) {
+	if place_meeting(x , y + yspd , canyonWall_object) {
 		yspd = 0;
 	}
 	

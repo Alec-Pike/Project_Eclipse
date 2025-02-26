@@ -34,6 +34,18 @@
         "GMObject",
       ],"listItems":[],"multiselect":false,"name":"explosion_effect","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"EnemyExplosionMedium_Object","path":"objects/EnemyExplosionMedium_Object/EnemyExplosionMedium_Object.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"EnemyExplosionMedium_Object","varType":5,},
     {"$GMObjectProperty":"v1","%Name":"move_speed","filters":[],"listItems":[],"multiselect":false,"name":"move_speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.5","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"right_sprite","filters":[
+        "GMSprite",
+      ],"listItems":[],"multiselect":false,"name":"right_sprite","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
+    {"$GMObjectProperty":"v1","%Name":"up_sprite","filters":[
+        "GMSprite",
+      ],"listItems":[],"multiselect":false,"name":"up_sprite","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
+    {"$GMObjectProperty":"v1","%Name":"left_sprite","filters":[
+        "GMSprite",
+      ],"listItems":[],"multiselect":false,"name":"left_sprite","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
+    {"$GMObjectProperty":"v1","%Name":"down_sprite","filters":[
+        "GMSprite",
+      ],"listItems":[],"multiselect":false,"name":"down_sprite","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
