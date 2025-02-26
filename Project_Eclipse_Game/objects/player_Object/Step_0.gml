@@ -10,6 +10,7 @@ downKey = keyboard_check(ord("S"));
 shootKey = mouse_check_button(mb_left);
 
 dodgeKey = keyboard_check_pressed(vk_space);
+//dodgeKey = keyboard_check_pressed(vk_shift);
 
 // player movement
 #region
