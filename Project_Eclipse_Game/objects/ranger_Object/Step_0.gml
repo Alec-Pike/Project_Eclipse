@@ -1,6 +1,6 @@
 // Inherit the parent event
 event_inherited();
-
+#region //ranger aiming
 //enemy aiming
 	centerY = y + centerYOffset;
 	
@@ -35,3 +35,5 @@ if (distance_to_object(player_Object) < 300 && shootTimer <= 0)
 		_bulletInst.image_angle = point_direction(x, y, player_Object.x, player_Object.y);
 	}
 }
+#endregion
+

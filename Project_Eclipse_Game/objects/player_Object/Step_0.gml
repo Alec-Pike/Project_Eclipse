@@ -1,4 +1,3 @@
-
 //get inputs for movement
 
 rightKey = keyboard_check(ord("D")); //if D is pressed

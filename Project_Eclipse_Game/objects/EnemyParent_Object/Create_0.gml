@@ -10,3 +10,4 @@ sprite[0] = right_sprite;
 sprite[1] = up_sprite;
 sprite[2] = left_sprite;
 sprite[3] = down_sprite;
+
