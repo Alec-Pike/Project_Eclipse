@@ -118,11 +118,11 @@ if (dodgeKey && _spd > 0 && dodgeTimer <= 0)
     yspd = lengthdir_y(dodgeLegth, moveDir);
         
     //add collisions for the walls that exist for pits, water
-    if place_meeting(x + xspd , y , wall_Object) {
+    if place_meeting(x + xspd , y , canyonWall_object) {
         xspd = 0;
     }
         
-    if place_meeting(x , y + yspd , wall_Object) {
+    if place_meeting(x , y + yspd , canyonWall_object) {
         yspd = 0;
     }
         
