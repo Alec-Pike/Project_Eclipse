@@ -20,4 +20,3 @@ function draw_my_weapon()
 
 }
 
- 
