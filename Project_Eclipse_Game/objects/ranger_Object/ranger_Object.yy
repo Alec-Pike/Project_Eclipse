@@ -14,10 +14,11 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"EnemyParent_Object","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"propertyId":{"name":"up_sprite","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"resource":{"name":"rangerUp_Sprite","path":"sprites/rangerUp_Sprite/rangerUp_Sprite.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"rangerUp_Sprite",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"EnemyParent_Object","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"propertyId":{"name":"left_sprite","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"resource":{"name":"rangerLeft_Sprite","path":"sprites/rangerLeft_Sprite/rangerLeft_Sprite.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"rangerLeft_Sprite",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"EnemyParent_Object","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"propertyId":{"name":"down_sprite","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"resource":{"name":"rangerDown_Sprite","path":"sprites/rangerDown_Sprite/rangerDown_Sprite.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"rangerDown_Sprite",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"EnemyParent_Object","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"propertyId":{"name":"stopDistance","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"200",},
   ],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"enemies",
+    "path":"folders/Objects/enemies.yy",
   },
   "parentObjectId":{
     "name":"EnemyParent_Object",

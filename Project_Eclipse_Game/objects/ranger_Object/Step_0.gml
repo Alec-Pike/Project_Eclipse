@@ -5,7 +5,7 @@ event_inherited();
 	centerY = y + centerYOffset;
 	
 	//aim
-	aimDir = point_direction(x,centerY,player_Object.x, player_Object.y);
+	aimDir = point_direction(x,centerY,goal.x, goal.y);
 	//centerY is the center of the player
 //sprite control
 
@@ -15,7 +15,7 @@ if shootTimer > 0
 	shootTimer--; 
 }
 
-if (distance_to_object(player_Object) < 300 && shootTimer <= 0)
+if (distance_to_object(goal) < 300 && shootTimer <= 0)
 {
 	
 	//reset the timer
@@ -31,8 +31,8 @@ if (distance_to_object(player_Object) < 300 && shootTimer <= 0)
 	//change the bullet's direction
 	with(_bulletInst) 
 	{
-		dir = other.aimDir; //other refers to another object, player in this case
-		_bulletInst.image_angle = point_direction(x, y, player_Object.x, player_Object.y);
+		dir = other.aimDir; //other refers to another object, ranger in this case
+		_bulletInst.image_angle = dir;
 	}
 }
 #endregion

@@ -9,8 +9,8 @@
   "name":"rangerBullet_Object",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"damage",
+    "path":"folders/Objects/damage.yy",
   },
   "parentObjectId":{
     "name":"DamagePlayer_Object",

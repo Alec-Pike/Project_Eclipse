@@ -15,8 +15,8 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"EnemyParent_Object","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"propertyId":{"name":"down_sprite","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"resource":{"name":"rammerDown_sprite","path":"sprites/rammerDown_sprite/rammerDown_sprite.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"rammerDown_sprite",},
   ],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"enemies",
+    "path":"folders/Objects/enemies.yy",
   },
   "parentObjectId":{
     "name":"EnemyParent_Object",

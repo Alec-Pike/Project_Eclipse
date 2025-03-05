@@ -11,8 +11,8 @@
   "name":"EnemyParent_Object",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"enemies",
+    "path":"folders/Objects/enemies.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -46,6 +46,7 @@
     {"$GMObjectProperty":"v1","%Name":"down_sprite","filters":[
         "GMSprite",
       ],"listItems":[],"multiselect":false,"name":"down_sprite","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
+    {"$GMObjectProperty":"v1","%Name":"stopDistance","filters":[],"listItems":[],"multiselect":false,"name":"stopDistance","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

@@ -15,8 +15,8 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"EnemyParent_Object","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"propertyId":{"name":"down_sprite","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"resource":{"name":"flea_sprite","path":"sprites/flea_sprite/flea_sprite.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"flea_sprite",},
   ],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"enemies",
+    "path":"folders/Objects/enemies.yy",
   },
   "parentObjectId":{
     "name":"EnemyParent_Object",
