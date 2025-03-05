@@ -1,16 +1,34 @@
-//receive damage
+//receive damage for enemies
 
-if place_meeting(x,y,DamageEnemy_Object)
-{
-    var _inst = instance_place(x,y,DamageEnemy_Object);
-    
-    //take damage from specific instance
-    hp -= _inst.damage;
-    
-    //tell the damage instance to destroy itself
-    
-    _inst.destroy = true;	
-}
+	if place_meeting(x,y,DamageEnemy_Object)
+	{	
+	//getting a list of the damage instances
+		var _instList = ds_list_create();
+		
+		//create ds list and copy instances to it
+		instance_place_list(x,y,DamageEnemy_Object, _instList, false);
+		
+		//get size of list
+		var _listSize = ds_list_size(_instList);
+		
+		//loop through the list
+		for (var i = 0; i < _listSize; i++) {
+		
+			//get a damage object instance from the list
+			var _inst = ds_list_find_value(_instList,i);
+			
+			//take damage from specific instance
+			hp -= _inst.damage;
+			
+			//tell damage instance to destroy itself
+			
+			_inst.destroy = true;
+		}
+		//free memory by destroying the ds list
+		ds_list_destroy(_instList);
+	}
+
+
 
 // check if dead
 if (hp <= 0) {
