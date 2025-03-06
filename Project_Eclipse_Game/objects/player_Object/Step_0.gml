@@ -51,7 +51,7 @@ dodgeKey = keyboard_check_pressed(vk_space);
 #endregion
 
 //get damaged
-get_damaged(DamagePlayer_Object);
+get_damaged(DamagePlayer_Object, true); // we will be using i-frames for the player
 
 
 //player aiming

@@ -9,6 +9,11 @@
 	
 	
 	
+//cleanup
+
+    //hit confirm destroy
+    if hitConfirm == true && enemyDestroy == true { destroy = true; };
+        // now ranger bullets will not phase through player
 	
 //cleanup
 	//destroy

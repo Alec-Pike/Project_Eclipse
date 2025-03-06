@@ -1,5 +1,5 @@
 //damage setup
-	get_damaged_create(playerHP);
+	get_damaged_create(playerHP, true);
 
 //some variables for movement
 
