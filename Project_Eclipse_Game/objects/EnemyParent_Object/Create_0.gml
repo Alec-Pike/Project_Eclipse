@@ -10,3 +10,5 @@ sprite[1] = up_sprite;
 sprite[2] = left_sprite;
 sprite[3] = down_sprite;
 
+//create the damage list
+damageList = ds_list_create()

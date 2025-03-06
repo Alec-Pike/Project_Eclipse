@@ -17,17 +17,39 @@
 			//get a damage object instance from the list
 			var _inst = ds_list_find_value(_instList,i);
 			
-			//take damage from specific instance
-			hp -= _inst.damage;
+			//check if this instance is already in damageList
+			if ds_list_find_index(damageList, _inst) == -1 {
+				
+				//add new dmg instance
+				ds_list_add(damageList, _inst);
+				
+				//take damage from specific instance
+				hp -= _inst.damage;
 			
-			//tell damage instance to destroy itself
+				//tell damage instance to destroy itself
 			
-			_inst.destroy = true;
+				_inst.destroy = true;
+			}
 		}
 		//free memory by destroying the ds list
 		ds_list_destroy(_instList);
 	}
 
+	
+	//clear damage list of objs that do not exist anymore or arent touching anymore
+	var _damageListSize = ds_list_size(damageList);
+	for(var i = 0; i < _damageListSize; i++) {
+	
+		//if not touching the damage instance anymore, remove it from the list AND set the loop back 1 position
+		var _inst = ds_list_find_value(damageList,i);
+		if !instance_exists(_inst) || !place_meeting (x,y,_inst) {
+		
+			ds_list_delete(damageList, i);
+			i--;
+			_damageListSize--;
+		}
+		
+	}
 
 
 // check if dead
