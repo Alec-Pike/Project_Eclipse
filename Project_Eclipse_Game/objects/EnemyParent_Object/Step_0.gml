@@ -26,9 +26,9 @@
 				//take damage from specific instance
 				hp -= _inst.damage;
 			
-				//tell damage instance to destroy itself
+				//tell damage instance to it has impacted
 			
-				_inst.destroy = true;
+				_inst.hitConfirm = true;
 			}
 		}
 		//free memory by destroying the ds list
