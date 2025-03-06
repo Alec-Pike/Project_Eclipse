@@ -1,18 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"gameManager_Object",
+  "%Name":"PlayerExplosion_Object",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"gameManager_Object",
+  "name":"PlayerExplosion_Object",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":null,
-  "persistent":true,
+  "parentObjectId":{
+    "name":"specialEffectParent_Object",
+    "path":"objects/specialEffectParent_Object/specialEffectParent_Object.yy",
+  },
+  "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -29,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"EnemyExplosionMedium_sprite",
+    "path":"sprites/EnemyExplosionMedium_sprite/EnemyExplosionMedium_sprite.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

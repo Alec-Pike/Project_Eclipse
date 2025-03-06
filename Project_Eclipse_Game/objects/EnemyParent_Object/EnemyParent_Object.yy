@@ -33,7 +33,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"hp","filters":[],"listItems":[],"multiselect":false,"name":"hp","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"startingHP","filters":[],"listItems":[],"multiselect":false,"name":"startingHP","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"explosion_effect","filters":[
         "GMObject",
       ],"listItems":[],"multiselect":false,"name":"explosion_effect","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"EnemyExplosionMedium_Object","path":"objects/EnemyExplosionMedium_Object/EnemyExplosionMedium_Object.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"EnemyExplosionMedium_Object","varType":5,},

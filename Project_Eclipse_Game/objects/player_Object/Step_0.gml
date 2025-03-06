@@ -140,3 +140,8 @@ if (dodgeKey && _spd > 0 && dodgeTimer <= 0)
     depth = -bbox_bottom;
 }
 #endregion
+
+// check for player death
+if hp <= 0 {
+    instance_destroy(self);
+}

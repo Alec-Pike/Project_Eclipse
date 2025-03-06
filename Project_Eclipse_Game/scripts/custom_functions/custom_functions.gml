@@ -28,7 +28,7 @@ function draw_my_weapon()
         // get the i-frames
         if _iframes == true {
             iframeTimer = 0;
-            iframeNumber = 90;
+            iframeNumber = 60;
         }
         
 		//create the damage list

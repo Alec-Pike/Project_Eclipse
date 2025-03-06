@@ -56,6 +56,7 @@
     {"id":{"name":"menu_Object","path":"objects/menu_Object/menu_Object.yy",},},
     {"id":{"name":"pit_object","path":"objects/pit_object/pit_object.yy",},},
     {"id":{"name":"player_Object","path":"objects/player_Object/player_Object.yy",},},
+    {"id":{"name":"PlayerExplosion_Object","path":"objects/PlayerExplosion_Object/PlayerExplosion_Object.yy",},},
     {"id":{"name":"rammer_object","path":"objects/rammer_object/rammer_object.yy",},},
     {"id":{"name":"ranger_Object","path":"objects/ranger_Object/ranger_Object.yy",},},
     {"id":{"name":"rangerBullet_Object","path":"objects/rangerBullet_Object/rangerBullet_Object.yy",},},

@@ -12,7 +12,10 @@
 //cleanup
 
     //hit confirm destroy
-    if hitConfirm == true && enemyDestroy == true { destroy = true; };
+    if hitConfirm == true && enemyDestroy == true { 
+        destroy = true; 
+        show_debug_message("ranger bullet hit a target");
+    }
         // now ranger bullets will not phase through player
 	
 //cleanup
@@ -28,6 +31,7 @@
 	if place_meeting(x,y, solidWall_object) 
 	{
 		destroy = true;
+        show_debug_message("ranger bullet hit a wall");
 	}
 	
 	//bullet out of range

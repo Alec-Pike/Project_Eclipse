@@ -1,2 +1,2 @@
-Menu(600, 500, [["Start", room_goto_next], ["Options", -1]]);
-//TODO: implement options menu
+Menu(600, 500, [["Start", room_goto_next], ["View Controls", -1]]);
+//TODO: implement view controls menu

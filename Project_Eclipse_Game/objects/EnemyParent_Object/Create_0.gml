@@ -12,4 +12,7 @@ sprite[1] = up_sprite;
 sprite[2] = left_sprite;
 sprite[3] = down_sprite;
 
-get_damaged_create(hp);
+get_damaged_create(startingHP);
+
+toAvoid = wall_Object; // enemy will avoid this object while moving
+// For the rammer (hovering enemy), just change it to solidWall_object

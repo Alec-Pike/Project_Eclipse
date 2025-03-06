@@ -6,5 +6,5 @@ xspd = 0;
 yspd = 0;
 
 //cleanup, bullet dies after certain distance
-maxDist = 250; //250 pixels before getting destroyed
+maxDist = 275; //275 pixels before getting destroyed
 destroy = false;

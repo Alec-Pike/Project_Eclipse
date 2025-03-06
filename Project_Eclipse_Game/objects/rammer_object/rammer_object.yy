@@ -2,13 +2,13 @@
   "$GMObject":"",
   "%Name":"rammer_object",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"rammer_object",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"EnemyParent_Object","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"propertyId":{"name":"move_speed","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0.75",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"EnemyParent_Object","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"propertyId":{"name":"hp","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"50",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"EnemyParent_Object","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"propertyId":{"name":"startingHP","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"50",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"EnemyParent_Object","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"propertyId":{"name":"right_sprite","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"resource":{"name":"rammerRight_sprite","path":"sprites/rammerRight_sprite/rammerRight_sprite.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"rammerRight_sprite",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"EnemyParent_Object","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"propertyId":{"name":"up_sprite","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"resource":{"name":"rammerUp_sprite","path":"sprites/rammerUp_sprite/rammerUp_sprite.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"rammerUp_sprite",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"EnemyParent_Object","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"propertyId":{"name":"left_sprite","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"resource":{"name":"rammerLeft_sprite","path":"sprites/rammerLeft_sprite/rammerLeft_sprite.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"rammerLeft_sprite",},
