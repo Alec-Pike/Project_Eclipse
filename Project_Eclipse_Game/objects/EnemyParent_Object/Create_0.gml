@@ -1,3 +1,5 @@
+event_inherited();
+
 // movement settings
 mp_potential_settings(45, 5, move_speed+4, true);
 
@@ -10,5 +12,4 @@ sprite[1] = up_sprite;
 sprite[2] = left_sprite;
 sprite[3] = down_sprite;
 
-//create the damage list
-damageList = ds_list_create()
+get_damaged_create(hp);

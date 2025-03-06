@@ -1,3 +1,6 @@
+//damage setup
+	get_damaged_create(playerHP);
+
 //some variables for movement
 
 	moveDir = 0;

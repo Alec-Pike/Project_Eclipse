@@ -50,6 +50,10 @@ dodgeKey = keyboard_check_pressed(vk_space);
 	
 #endregion
 
+//get damaged
+get_damaged(DamagePlayer_Object);
+
+
 //player aiming
 	centerY = y + centerYOffset;
 	

@@ -1,5 +1,4 @@
 //drawing the player's weapon
-
 function draw_my_weapon() 
 {
 
@@ -20,8 +19,23 @@ function draw_my_weapon()
 
 }
 
-
 //damage calculation
+	//damage create event
+	function get_damaged_create(_hp)
+	{
+		hp = _hp
+		//create the damage list
+		damageList = ds_list_create()
+	}
+	
+	//damage clean up event
+	function get_damaged_cleanup()
+	{
+		//delete our damage list data structure to free memory
+		ds_list_destroy(damageList);
+	}
+
+
 	//damage step event
 	function get_damaged(_damageObj)
 	{
