@@ -1,56 +1,5 @@
-//receive damage for enemies
-
-	if place_meeting(x,y,DamageEnemy_Object)
-	{	
-	//getting a list of the damage instances
-		var _instList = ds_list_create();
-		
-		//create ds list and copy instances to it
-		instance_place_list(x,y,DamageEnemy_Object, _instList, false);
-		
-		//get size of list
-		var _listSize = ds_list_size(_instList);
-		
-		//loop through the list
-		for (var i = 0; i < _listSize; i++) {
-		
-			//get a damage object instance from the list
-			var _inst = ds_list_find_value(_instList,i);
-			
-			//check if this instance is already in damageList
-			if ds_list_find_index(damageList, _inst) == -1 {
-				
-				//add new dmg instance
-				ds_list_add(damageList, _inst);
-				
-				//take damage from specific instance
-				hp -= _inst.damage;
-			
-				//tell damage instance to it has impacted
-			
-				_inst.hitConfirm = true;
-			}
-		}
-		//free memory by destroying the ds list
-		ds_list_destroy(_instList);
-	}
-
-	
-	//clear damage list of objs that do not exist anymore or arent touching anymore
-	var _damageListSize = ds_list_size(damageList);
-	for(var i = 0; i < _damageListSize; i++) {
-	
-		//if not touching the damage instance anymore, remove it from the list AND set the loop back 1 position
-		var _inst = ds_list_find_value(damageList,i);
-		if !instance_exists(_inst) || !place_meeting (x,y,_inst) {
-		
-			ds_list_delete(damageList, i);
-			i--;
-			_damageListSize--;
-		}
-		
-	}
-
+//receive damage
+get_damaged(DamageEnemy_Object); //put in the object you want to damage as the parameter
 
 // check if dead
 if (hp <= 0) {
