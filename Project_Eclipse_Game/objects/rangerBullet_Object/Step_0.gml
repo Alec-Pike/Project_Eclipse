@@ -28,7 +28,7 @@
 	}
 
 	// collision
-	if place_meeting(x,y, solidWall_object) 
+	if place_meeting(x,y, rockParent_object) 
 	{
 		destroy = true;
         show_debug_message("ranger bullet hit a wall");

@@ -23,7 +23,7 @@ aimDir = 0; //deetermines direction the player is facing
 face = 3; //face works as an index
 sprite[0] = playerRight_Sprite;
 sprite[1] = playerUp_Sprite;
-sprite[2] = playerLeft_Sprite;
+sprite[2] = playerRight_Sprite;
 sprite[3] = playerDown_Sprite; //2 * 90 equals 270 degrees, straight down. 2 is the index of this array
 
 //sprite_index = sprite[face]; this disappears???

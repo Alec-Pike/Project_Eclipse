@@ -8,8 +8,8 @@
   "name":"gameManager_Object",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"clerical",
+    "path":"folders/Objects/clerical.yy",
   },
   "parentObjectId":null,
   "persistent":true,

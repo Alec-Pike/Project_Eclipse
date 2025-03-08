@@ -12,12 +12,12 @@
   "name":"ship_Object",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"player",
+    "path":"folders/Objects/player.yy",
   },
   "parentObjectId":{
-    "name":"solidWall_object",
-    "path":"objects/solidWall_object/solidWall_object.yy",
+    "name":"wallParent_object",
+    "path":"objects/wallParent_object/wallParent_object.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -37,7 +37,7 @@
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
     "name":"ship_Sprite",
     "path":"sprites/ship_Sprite/ship_Sprite.yy",

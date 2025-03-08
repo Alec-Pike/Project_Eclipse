@@ -10,8 +10,8 @@
     "path":"folders/Objects/terrain.yy",
   },
   "parentObjectId":{
-    "name":"solidWall_object",
-    "path":"objects/solidWall_object/solidWall_object.yy",
+    "name":"rockParent_object",
+    "path":"objects/rockParent_object/rockParent_object.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -29,7 +29,7 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
     "name":"IoCrater_sprite",
     "path":"sprites/IoCrater_sprite/IoCrater_sprite.yy",

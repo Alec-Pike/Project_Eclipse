@@ -44,9 +44,6 @@
     {"$GMObjectProperty":"v1","%Name":"up_sprite","filters":[
         "GMSprite",
       ],"listItems":[],"multiselect":false,"name":"up_sprite","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
-    {"$GMObjectProperty":"v1","%Name":"left_sprite","filters":[
-        "GMSprite",
-      ],"listItems":[],"multiselect":false,"name":"left_sprite","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
     {"$GMObjectProperty":"v1","%Name":"down_sprite","filters":[
         "GMSprite",
       ],"listItems":[],"multiselect":false,"name":"down_sprite","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},

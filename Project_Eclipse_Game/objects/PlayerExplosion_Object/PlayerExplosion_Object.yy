@@ -8,8 +8,8 @@
   "name":"PlayerExplosion_Object",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"sfx",
+    "path":"folders/Objects/sfx.yy",
   },
   "parentObjectId":{
     "name":"specialEffectParent_Object",

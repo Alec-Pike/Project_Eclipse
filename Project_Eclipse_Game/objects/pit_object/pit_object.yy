@@ -10,8 +10,8 @@
     "path":"folders/Objects/terrain.yy",
   },
   "parentObjectId":{
-    "name":"wall_Object",
-    "path":"objects/wall_Object/wall_Object.yy",
+    "name":"obstacleParent_Object",
+    "path":"objects/obstacleParent_Object/obstacleParent_Object.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -29,7 +29,7 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
     "name":"pit_sprite",
     "path":"sprites/pit_sprite/pit_sprite.yy",

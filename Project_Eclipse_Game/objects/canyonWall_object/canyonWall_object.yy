@@ -9,7 +9,10 @@
     "name":"terrain",
     "path":"folders/Objects/terrain.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"wallParent_object",
+    "path":"objects/wallParent_object/wallParent_object.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

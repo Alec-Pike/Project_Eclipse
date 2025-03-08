@@ -26,7 +26,7 @@
 	}
 
 	// collision
-	if place_meeting(x,y, solidWall_object) 
+	if place_meeting(x,y, wallParent_object) 
 	{
 		destroy = true;
 	}

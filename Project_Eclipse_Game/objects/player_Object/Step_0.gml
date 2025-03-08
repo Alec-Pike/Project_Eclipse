@@ -31,12 +31,12 @@ dodgeKey = keyboard_check_pressed(vk_space);
 	yspd = lengthdir_y(_spd, moveDir);
 	
 	//add collisions for the walls that exist for pits, rocks, and the map border
-    // canyonWall_object is the parent of the pits and rocks, so this covers everything
-	if place_meeting(x + xspd , y , canyonWall_object) {
+    // obstacleParent_Object is the parent of the pits and rocks, so this covers everything
+	if place_meeting(x + xspd , y , obstacleParent_Object) {
 		xspd = 0;
 	}
 	
-	if place_meeting(x , y + yspd , canyonWall_object) {
+	if place_meeting(x , y + yspd , obstacleParent_Object) {
 		yspd = 0;
 	}
 	
@@ -66,7 +66,14 @@ get_damaged(DamagePlayer_Object, true); // we will be using i-frames for the pla
 	face = round(aimDir/90); //aimDir has a degree like 90, 180 or 270 and so on based on mouse direction
 	if face == 4 { face = 0; }; //since a degree from moveDir like 350 will round up to 360, so when it does 360/9 it gets an index of 4 which we don't have
 	//face has to be either 0,1,2,3 to use the code from create that changes sprite/changes player direction
-	
+    if face == 2 { // left and right use the same sprite
+        face = 0; 
+        image_xscale = -1;
+    } else {
+        image_xscale = 1;
+    }
+
+
 	//animate
 	if (xspd == 0 && yspd == 0) { //we don't have animation yet lol
 		image_index = 0; //if player no move, the current sprite stays in frame 1, which does not move because it's a still image
