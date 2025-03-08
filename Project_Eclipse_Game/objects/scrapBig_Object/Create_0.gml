@@ -1,0 +1,1 @@
+alarm[0] = 500; // amount of time this will stay on screen before despawning

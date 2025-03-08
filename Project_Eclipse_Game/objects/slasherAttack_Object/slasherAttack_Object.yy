@@ -1,19 +1,22 @@
 {
   "$GMObject":"",
-  "%Name":"gameManager_Object",
+  "%Name":"slasherAttack_Object",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"gameManager_Object",
+  "name":"slasherAttack_Object",
   "overriddenProperties":[],
   "parent":{
-    "name":"clerical",
-    "path":"folders/Objects/clerical.yy",
+    "name":"damage",
+    "path":"folders/Objects/damage.yy",
   },
-  "parentObjectId":null,
-  "persistent":true,
+  "parentObjectId":{
+    "name":"DamagePlayer_Object",
+    "path":"objects/DamagePlayer_Object/DamagePlayer_Object.yy",
+  },
+  "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -30,7 +33,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"slasherAttack_Sprite",
+    "path":"sprites/slasherAttack_Sprite/slasherAttack_Sprite.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

@@ -5,12 +5,8 @@ centerYOffset = -25; //distance away from the origin point on sprite
 centerY = y + centerYOffset; //set in step event, we need to get this dynamically
 
 weaponOffsetDist = 3;
-aimDir = 0; //determines direction the player is facing
+aimDir = 0; //determines direction the ranger is facing
 
-
-bulletObj = rangerBullet_Object;
-	//weaponLength = 19;
-	//weaponLength = sprite_get_bbox_right(bullet_Sprite);
 	
 	//weapon is a struct
 	defaultGun = {

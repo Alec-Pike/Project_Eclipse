@@ -1,7 +1,10 @@
 {
   "$GMObject":"",
   "%Name":"slasher_Object",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"slasher_Object",
   "overriddenProperties":[
@@ -9,6 +12,7 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"EnemyParent_Object","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"propertyId":{"name":"right_sprite","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"resource":{"name":"slasherRight_Sprite","path":"sprites/slasherRight_Sprite/slasherRight_Sprite.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"slasherRight_Sprite",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"EnemyParent_Object","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"propertyId":{"name":"up_sprite","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"resource":{"name":"slasherUp_Sprite","path":"sprites/slasherUp_Sprite/slasherUp_Sprite.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"slasherUp_Sprite",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"EnemyParent_Object","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"propertyId":{"name":"down_sprite","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"resource":{"name":"slasherDown_Sprite","path":"sprites/slasherDown_Sprite/slasherDown_Sprite.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"slasherDown_Sprite",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"EnemyParent_Object","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"propertyId":{"name":"stopDistance","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"5",},
   ],
   "parent":{
     "name":"enemies",

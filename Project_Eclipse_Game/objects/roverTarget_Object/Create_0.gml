@@ -1,0 +1,1 @@
+alarm[0] = 90; // this is how long the target stays on screen before exploding

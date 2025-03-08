@@ -18,7 +18,7 @@ if instance_exists(goal) {
     	shootTimer--; 
     }
     
-    if (distance_to_object(goal) < 300 && shootTimer <= 0)
+    if (distance_to_object(goal) < stopDistance && shootTimer <= 0)
     {
     	
     	//reset the timer
