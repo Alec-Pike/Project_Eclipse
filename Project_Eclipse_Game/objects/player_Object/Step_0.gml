@@ -79,9 +79,10 @@ get_damaged(DamagePlayer_Object, true); // we will be using i-frames for the pla
 		sprite_index = idle[face];
 	}
 	
+	else {
 	//set the player sprite
 	mask_index = sprite[3];
-	sprite_index = sprite[face];
+	sprite_index = sprite[face]; }
 #endregion
 
 //shoot the weapon
