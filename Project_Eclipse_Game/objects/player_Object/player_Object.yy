@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"playerDown_Sprite",
-    "path":"sprites/playerDown_Sprite/playerDown_Sprite.yy",
+    "name":"idleMain_Sprite",
+    "path":"sprites/idleMain_Sprite/idleMain_Sprite.yy",
   },
   "spriteMaskId":{
     "name":"playerDown_Sprite",

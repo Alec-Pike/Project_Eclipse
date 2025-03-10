@@ -75,8 +75,8 @@ get_damaged(DamagePlayer_Object, true); // we will be using i-frames for the pla
 
 
 	//animate
-	if (xspd == 0 && yspd == 0) { //we don't have animation yet lol
-		image_index = 0; //if player no move, the current sprite stays in frame 1, which does not move because it's a still image
+	if (xspd == 0 && yspd == 0) {
+		sprite_index = idle[face];
 	}
 	
 	//set the player sprite

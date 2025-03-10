@@ -25,9 +25,14 @@ sprite[0] = playerRight_Sprite;
 sprite[1] = playerUp_Sprite;
 sprite[2] = playerRight_Sprite;
 sprite[3] = playerDown_Sprite; //2 * 90 equals 270 degrees, straight down. 2 is the index of this array
-
+//sprite[4] = idleMain_Sprite; //main idle
 //sprite_index = sprite[face]; this disappears???
 
+//array for controlling idle animations I guess
+idle[0] = idleMain_Sprite;
+idle[1] = idleMainNorth_Sprite;
+idle[2] = idleMainSide_Sprite;
+idle[3] = idleMain_Sprite;
 
 //weapon info
 
