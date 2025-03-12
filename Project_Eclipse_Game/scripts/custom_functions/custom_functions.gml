@@ -220,4 +220,14 @@ function maxPlayerHP() {
 
 	player_Object.hp = 100; //player hp back to 100
 }
+
+function increaseBullets() {
+	
+	
+	
+}
+
+
+
+
 #endregion
