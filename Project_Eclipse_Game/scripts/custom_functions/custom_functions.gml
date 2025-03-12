@@ -168,7 +168,7 @@ function upgrade_menu() {
      
     // spawn upgrade menu
     var _options = [
-        ["Max player HP ($5)", -1],
+        ["Max player HP ($5)", maxPlayerHP],
         ["Bullets per shot ($10)", -1],
         ["Weapon cooldown ($5)", -1],
         ["Max ship HP ($10)", -1],
@@ -214,4 +214,10 @@ function start_wave() {
 
 #region upgrades
 //TODO: implement upgrades
+
+//refilling the player's HP
+function maxPlayerHP() {
+
+	player_Object.hp = 100; //player hp back to 100
+}
 #endregion
