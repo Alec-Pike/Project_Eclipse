@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"scrapBig_Sprite",
-    "path":"sprites/scrapBig_Sprite/scrapBig_Sprite.yy",
+    "name":"fiveScrap_sprite",
+    "path":"sprites/fiveScrap_sprite/fiveScrap_sprite.yy",
   },
   "spriteMaskId":null,
   "visible":true,

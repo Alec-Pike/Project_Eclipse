@@ -11,7 +11,8 @@ if (point_in_rectangle(mouse_x, mouse_y, x, y, x+width, y+height)) {
     }
 }
 
-hover += keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up);
+hover += (keyboard_check_pressed(vk_down) || keyboard_check(ord("W")))
+hover -= (keyboard_check_pressed(vk_up) || keyboard_check(ord("S")));
 
 if (hover > optionsCount-1) hover = 0;
 if (hover < 0) hover = optionsCount-1;
@@ -21,7 +22,6 @@ if ((mouse_check_button_pressed(mb_left) && mouseOver) || keyboard_check_pressed
         var _func = options[hover][1];
         if (_func != -1) _func();
     }
-    //instance_destroy();
 }
 
 mxPrev = mouse_x;

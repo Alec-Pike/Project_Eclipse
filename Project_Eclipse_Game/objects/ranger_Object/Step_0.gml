@@ -11,11 +11,17 @@ if instance_exists(goal) {
     	aimDir = point_direction(x,centerY,goal.x, goal.y);
     	//centerY is the center of the player
     //sprite control
+    direction = aimDir;
     
     //shoot the weapon
     if shootTimer > 0
     {
     	shootTimer--; 
+        
+        // animate gun
+        if shootTimer < weapon.cooldown/4 {
+            weapon.sprite = rangerGunCharge_Sprite;
+        }
     }
     
     if (distance_to_object(goal) < stopDistance && shootTimer <= 0)
@@ -23,6 +29,10 @@ if instance_exists(goal) {
     	
     	//reset the timer
     	shootTimer = weapon.cooldown;
+        
+        // reset the weapon sprite
+        weapon.sprite = rangerGun_Sprite;
+        
     //shooting	
     	//create the bullet
     	var _xOffset = lengthdir_x(weapon.length + weaponOffsetDist, aimDir);

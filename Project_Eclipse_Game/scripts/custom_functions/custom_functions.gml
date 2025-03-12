@@ -141,3 +141,77 @@ function draw_my_weapon()
 		
 	}
 
+#region manage waves
+
+///@desc used for processing the end of each wave of enemies
+function end_wave() {
+    
+    //TODO: sound effect here?
+    
+    //TODO: change bgm
+    
+    //graphics display helpers
+    var camerax = camera_get_view_x(view_camera[0]);
+    var cameray = camera_get_view_y(view_camera[0]);
+    
+    //display victory message
+    Menu(camerax+250, cameray+125, [["Next", upgrade_menu]], "WAVE CLEAR!");
+    
+}
+
+///@desc spawn the upgrade menu
+function upgrade_menu() {
+    // get rid of the wave clear menu
+    while instance_exists(menu_Object) {
+        instance_destroy(menu_Object);
+    }
+     
+    // spawn upgrade menu
+    var _options = [
+        ["Max player HP ($5)", -1],
+        ["Bullets per shot ($10)", -1],
+        ["Weapon cooldown ($5)", -1],
+        ["Max ship HP ($10)", -1],
+        ["Ship turret ($10)", -1],
+        ["Ship shield ($10)", -1],
+        ["Recover player HP ($3)", -1],
+        ["Recover ship HP ($5)", -1],
+        ["Next wave", start_wave]
+    ];
+    var camerax = camera_get_view_x(view_camera[0]);
+    var cameray = camera_get_view_y(view_camera[0]);
+    Menu(camerax+250, cameray+35, _options, "Buy upgrades");
+    
+}
+
+///@desc used for starting the next wave
+function start_wave() {
+    //TODO: fade screen
+        
+    // reset player position
+    if instance_exists(player_Object) {
+        player_Object.x = 1152;
+        player_Object.y = 768;
+    }
+    
+    // get rid of the upgrade menu
+    while instance_exists(menu_Object) {
+        instance_destroy(menu_Object);
+    }
+    
+    //reset global vars
+    global.currentWave++;
+    global.enemiesToSpawn = 10 + global.currentWave*5;
+    global.enemiesToKill = 10 + global.currentWave*5;
+    
+    //start spawning enemies again
+    enemySpawner_Object.alarm[0] = enemySpawner_Object.spawnInterval;
+    
+    global.betweenRounds = false;
+}
+
+#endregion
+
+#region upgrades
+//TODO: implement upgrades
+#endregion

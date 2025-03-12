@@ -14,7 +14,7 @@ aimDir = 0; //determines direction the ranger is facing
 		sprite : rangerGun_Sprite, //all these variables belong to the 'weapon' struct
 		length : sprite_get_bbox_right(rangerGun_Sprite),
 		bulletObj : rangerBullet_Object,
-		cooldown : 50,
+		cooldown : 100,
 		
 	}
 	

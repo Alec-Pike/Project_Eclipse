@@ -1,7 +1,13 @@
 draw_sprite_stretched(menu_Sprite,0,x-margin,y-margin,widthFull,heightFull);
 
 draw_set_color(c_white);
-draw_set_font(fSilver);
+
+if global.betweenRounds {
+    draw_set_font(fSilverHUD);
+} else {
+    draw_set_font(fSilver);
+}
+
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 

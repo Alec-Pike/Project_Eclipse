@@ -31,7 +31,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"menu_Sprite",
+    "path":"sprites/menu_Sprite/menu_Sprite.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

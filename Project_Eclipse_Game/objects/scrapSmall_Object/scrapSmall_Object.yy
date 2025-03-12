@@ -33,7 +33,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"singleScrap_sprite",
+    "path":"sprites/singleScrap_sprite/singleScrap_sprite.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

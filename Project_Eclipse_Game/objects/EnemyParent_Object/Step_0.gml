@@ -28,9 +28,9 @@ if (instance_exists(goal)) && (distance_to_object(goal) > stopDistance) {
     }    
 
     //animate
-    if (!instance_exists(goal)) || (distance_to_object(goal) <= stopDistance) {
-        image_index = 0; //if enemy no move, the current sprite stays in frame 1, which does not move because it's a still image
-    }
+    //    if (!instance_exists(goal)) || (distance_to_object(goal) <= stopDistance) {
+    //        image_index = 0; //if enemy no move, the current sprite stays in frame 1, which does not move because it's a still image
+    //    }
     
     //set the enemy sprite
     mask_index = sprite[3];

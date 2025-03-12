@@ -1,7 +1,7 @@
 event_inherited();
 
 // movement settings
-mp_potential_settings(45, 5, move_speed+4, true);
+mp_potential_settings(45, 5, move_speed+7, true);
 
 // randomly select target (player or ship)
 goal = choose(player_Object, ship_Object);
