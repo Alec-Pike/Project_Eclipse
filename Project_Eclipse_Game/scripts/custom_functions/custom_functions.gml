@@ -169,11 +169,11 @@ function upgrade_menu() {
     // spawn upgrade menu
     var _options = [
         ["Max player HP ($5)", maxPlayerHP],
-        ["Bullets per shot ($10)", -1],
-        ["Weapon cooldown ($5)", -1],
-        ["Max ship HP ($10)", -1],
-        ["Ship turret ($10)", -1],
-        ["Ship shield ($10)", -1],
+        ["Bullets per shot ($10)", increaseBullets],
+        ["Weapon cooldown ($5)", weaponCooldown],
+        ["Max ship HP ($10)", maxShipHP],
+        ["Ship turret ($10)", shipTurret],
+        ["Ship shield ($10)", shipShield],
         ["Recover player HP ($3)", -1],
         ["Recover ship HP ($5)", -1],
         ["Next wave", start_wave]
@@ -223,9 +223,31 @@ function maxPlayerHP() {
 
 function increaseBullets() {
 	
-	
+	//increase the number of bullets I believe
 	
 }
+
+function weaponCooldown() {
+
+	//Decrease the weapon Cooldown so that the player can shoot faster
+	draw_text(player_Object.x, player_Object.y, string(player_Object.wCooldown));
+	player_Object.wCooldown -= 5; //this does not seem to be working
+}
+
+function maxShipHP() {
+
+	ship_Object.hp = 500; //ship hp back to 500
+}
+
+function shipTurret() {
+
+	//add ship turret
+}
+
+function shipShield() {
+	//add ship shield
+}
+
 
 
 
