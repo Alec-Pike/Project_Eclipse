@@ -232,6 +232,7 @@ function weaponCooldown() {
 	//Decrease the weapon Cooldown so that the player can shoot faster
 	draw_text(player_Object.x, player_Object.y, string(player_Object.wCooldown));
 	player_Object.wCooldown -= 5; //this does not seem to be working
+	player_Object.weapon.cooldown = player_Object.wCooldown;
 }
 
 function maxShipHP() {
