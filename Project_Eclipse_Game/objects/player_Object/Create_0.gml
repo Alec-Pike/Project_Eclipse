@@ -18,6 +18,7 @@ centerY = y + centerYOffset; //set in step event, we need to get this dynamicall
 weaponOffsetDist = 3;
 aimDir = 0; //deetermines direction the player is facing
 
+bulletCount = 1; //default to shooting 1 bullet
 
 
 face = 3; //face works as an index

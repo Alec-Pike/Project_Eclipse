@@ -97,21 +97,30 @@ if (!global.betweenRounds) {
     	
     	//reset the timer
     	shootTimer = weapon.cooldown;
+		
+		//determine bullet speed
+		var spreadAngle = 10; //this can be adjusted for wider spread
+		var startAngle = aimDir - (spreadAngle * (bulletCount - 1) / 2);
+		
     //shooting	
-    	//create the bullet
-    	var _xOffset = lengthdir_x(weapon.length + weaponOffsetDist, aimDir);
-    	var _yOffset = lengthdir_y(weapon.length + weaponOffsetDist, aimDir);
-    	var _bulletInst = instance_create_depth(x + _xOffset,centerY + _yOffset, depth-100, weapon.bulletObj);
-    	//creating an instance of a bullet object
-    	//and storing it's unique ID in _bulletInst
+		for (var i = 0; i < bulletCount; i++)
+		{
+			var bulletAngle = startAngle + (i * spreadAngle);
+	    	//create the bullet
+	    	var _xOffset = lengthdir_x(weapon.length + weaponOffsetDist, bulletAngle);
+	    	var _yOffset = lengthdir_y(weapon.length + weaponOffsetDist, bulletAngle);
+	    	var _bulletInst = instance_create_depth(x + _xOffset,centerY + _yOffset, depth-100, weapon.bulletObj);
+	    	//creating an instance of a bullet object
+	    	//and storing it's unique ID in _bulletInst
     	
-    	//change the bullet's direction
-    	with(_bulletInst) 
-    	{
-    		dir = other.aimDir; //other refers to another object, player in this case
-    		_bulletInst.image_angle = point_direction(x, y, mouse_x, mouse_y);
-    	}
-    }
+	    	//change the bullet's direction
+	    	with(_bulletInst) 
+	    	{
+	    		dir = bulletAngle; //other refers to another object, player in this case
+	    		image_angle = bulletAngle;
+	    	}
+		}
+    }	
     
     // dodging
     #region

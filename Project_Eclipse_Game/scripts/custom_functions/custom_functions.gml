@@ -224,6 +224,7 @@ function maxPlayerHP() {
 function increaseBullets() {
 	
 	//increase the number of bullets I believe
+	player_Object.bulletCount = min(player_Object.bulletCount + 1, 5); // Limit max bullets (adjust as needed)
 	
 }
 
