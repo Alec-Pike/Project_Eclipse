@@ -7,7 +7,7 @@ if (_videoStatus == 0) // Video is playing without errors
 }
 
 draw_text(10, 10, string(video_get_status())); // Display status on screen
-//lets you know if video is working lol
+//this is that text you see at the top left, tells you status of the video
 
 
 
