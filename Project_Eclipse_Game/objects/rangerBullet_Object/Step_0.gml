@@ -14,7 +14,7 @@
     //hit confirm destroy
     if hitConfirm == true && enemyDestroy == true { 
         destroy = true; 
-        show_debug_message("ranger bullet hit a target");
+        //show_debug_message("ranger bullet hit a target");
     }
         // now ranger bullets will not phase through player
 	
@@ -31,7 +31,7 @@
 	if place_meeting(x,y, rockParent_object) 
 	{
 		destroy = true;
-        show_debug_message("ranger bullet hit a wall");
+        //show_debug_message("ranger bullet hit a wall");
 	}
 	
 	//bullet out of range

@@ -45,6 +45,7 @@
   ],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"AstroCasino.MP4","CopyToMask":-1,"filePath":"datafiles","name":"AstroCasino.MP4","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"OpeningPlaceholder.mp4","CopyToMask":-1,"filePath":"datafiles","name":"OpeningPlaceholder.mp4","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,
   "LibraryEmitters":[],
@@ -73,6 +74,7 @@
     {"id":{"name":"IoRock2_object","path":"objects/IoRock2_object/IoRock2_object.yy",},},
     {"id":{"name":"menu_Object","path":"objects/menu_Object/menu_Object.yy",},},
     {"id":{"name":"obstacleParent_Object","path":"objects/obstacleParent_Object/obstacleParent_Object.yy",},},
+    {"id":{"name":"OpeningCutscene_Object","path":"objects/OpeningCutscene_Object/OpeningCutscene_Object.yy",},},
     {"id":{"name":"pit_object","path":"objects/pit_object/pit_object.yy",},},
     {"id":{"name":"player_Object","path":"objects/player_Object/player_Object.yy",},},
     {"id":{"name":"PlayerExplosion_Object","path":"objects/PlayerExplosion_Object/PlayerExplosion_Object.yy",},},
@@ -96,6 +98,7 @@
     {"id":{"name":"wallParent_object","path":"objects/wallParent_object/wallParent_object.yy",},},
     {"id":{"name":"EndScreen","path":"rooms/EndScreen/EndScreen.yy",},},
     {"id":{"name":"MainRoom","path":"rooms/MainRoom/MainRoom.yy",},},
+    {"id":{"name":"OpeningCutscene","path":"rooms/OpeningCutscene/OpeningCutscene.yy",},},
     {"id":{"name":"TitleScreen","path":"rooms/TitleScreen/TitleScreen.yy",},},
     {"id":{"name":"custom_functions","path":"scripts/custom_functions/custom_functions.yy",},},
     {"id":{"name":"menu_functions","path":"scripts/menu_functions/menu_functions.yy",},},
@@ -174,6 +177,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"TitleScreen","path":"rooms/TitleScreen/TitleScreen.yy",},},
+    {"roomId":{"name":"OpeningCutscene","path":"rooms/OpeningCutscene/OpeningCutscene.yy",},},
     {"roomId":{"name":"MainRoom","path":"rooms/MainRoom/MainRoom.yy",},},
     {"roomId":{"name":"EndScreen","path":"rooms/EndScreen/EndScreen.yy",},},
   ],
