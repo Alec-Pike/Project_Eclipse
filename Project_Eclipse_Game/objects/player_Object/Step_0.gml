@@ -58,6 +58,7 @@ if (!global.betweenRounds) {
     
     //player aiming
     	centerY = y + centerYOffset;
+        centerX = x + centerXOffset;
     	
     	//aim
     	aimDir = point_direction(x,centerY,mouse_x, mouse_y);

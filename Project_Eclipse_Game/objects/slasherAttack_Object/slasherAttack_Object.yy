@@ -2,8 +2,8 @@
   "$GMObject":"",
   "%Name":"slasherAttack_Object",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"slasherAttack_Object",
@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"slasherAttack_Sprite",
-    "path":"sprites/slasherAttack_Sprite/slasherAttack_Sprite.yy",
+    "name":"slasherSlash_Sprite",
+    "path":"sprites/slasherSlash_Sprite/slasherSlash_Sprite.yy",
   },
   "spriteMaskId":null,
   "visible":true,

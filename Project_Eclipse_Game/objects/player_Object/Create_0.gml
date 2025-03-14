@@ -1,5 +1,6 @@
 //damage setup
-	get_damaged_create(startingHP, true);
+    maxHP = startingHP;
+	get_damaged_create(maxHP, true);
 
 //some variables for movement
 
@@ -14,6 +15,9 @@
 
 centerYOffset = -20; //distance away from the origin point on sprite
 centerY = y + centerYOffset; //set in step event, we need to get this dynamically
+//same thing for x
+centerXOffset = 0; 
+centerX = x + centerXOffset;
 
 weaponOffsetDist = 3;
 aimDir = 0; //deetermines direction the player is facing

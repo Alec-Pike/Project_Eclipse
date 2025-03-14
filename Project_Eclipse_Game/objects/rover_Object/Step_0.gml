@@ -8,12 +8,13 @@ if instance_exists(goal) {
     //decrement timer
     if shootTimer > 0
     {
-    	shootTimer--; 
+    	shootTimer--;
+         
     }
     
-    if (distance_to_object(goal) < stopDistance && shootTimer <= 0)
+    if (distance_to_object(goal) < stopDistance && shootTimer <= 0 )
     {
-    	
+    	idling = true;
     	//reset the timer
     	shootTimer = weapon.cooldown;
         //shooting	        

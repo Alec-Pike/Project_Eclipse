@@ -32,8 +32,8 @@
   "nineSlice":null,
   "origin":7,
   "parent":{
-    "name":"enemies",
-    "path":"folders/Sprites/enemies.yy",
+    "name":"slasher",
+    "path":"folders/Sprites/enemies/slasher.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -6,12 +6,12 @@ event_inherited();
 if instance_exists(goal) {
     //enemy aiming
     	centerY = y + centerYOffset;
+        centerX = x + centerXOffset;
     	
     	//aim
     	aimDir = point_direction(x,centerY,goal.x, goal.y);
     	//centerY is the center of the player
-    //sprite control
-    direction = aimDir;
+    
     
     //shoot the weapon
     if shootTimer > 0

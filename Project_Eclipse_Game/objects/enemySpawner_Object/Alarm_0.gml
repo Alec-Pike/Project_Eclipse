@@ -27,13 +27,13 @@ if global.enemiesToSpawn > 0 {
     
     // fleas spawn in groups of 3
     if _spawnNext == flea_object {
-        alarm[1] = spawnInterval*0.2;
-        alarm[2] = spawnInterval*0.4;
+        alarm[1] = floor(spawnInterval*0.2);
+        alarm[2] = floor(spawnInterval*0.4);
     }
     
     // spawns get faster towards the end of the wave
     if (global.enemiesToKill < global.currentWave*4) && (!spedUp) {
-        spawnInterval /= 2;
+        spawnInterval = floor(spawnInterval * 2/3);
         spedUp = true;
     }
     
@@ -41,6 +41,6 @@ if global.enemiesToSpawn > 0 {
     alarm[0] = spawnInterval;
 } else {
     // must be the end of the wave; reset the spawn interval to not be super fast
-    spawnInterval *= 2;
+    spawnInterval = defaultInterval;
     spedUp = false;
 }

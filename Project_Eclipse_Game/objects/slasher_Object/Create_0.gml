@@ -18,3 +18,13 @@ aimDir = 0; //determines direction the slasher is facing
     
     weapon = defaultGun;
     
+windup[0] = slasherWindupRight_Sprite;
+windup[1] = slasherWindupUp_Sprite;
+windup[2] = slasherWindupRight_Sprite;
+windup[3] = slasherWindupDown_Sprite;
+
+attacking[0] = slasherAttackRight_Sprite;
+attacking[1] = slasherAttackUp_Sprite;
+attacking[2] = slasherAttackRight_Sprite;
+attacking[3] = slasherAttackDown_Sprite;
+

@@ -12,4 +12,14 @@ sprite[1] = up_sprite;
 sprite[2] = right_sprite;
 sprite[3] = down_sprite;
 
+//array for controlling idle animations I guess
+idle[0] = idleSide;
+idle[1] = idleUp;
+idle[2] = idleSide;
+idle[3] = idleDown;
+
+idling = false;
+state = "walk";
+
+
 get_damaged_create(startingHP);

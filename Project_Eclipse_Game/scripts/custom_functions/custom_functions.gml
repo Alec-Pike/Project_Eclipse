@@ -15,7 +15,7 @@ function draw_my_weapon()
 		_weaponYscl = -1;
 	}
 
-	draw_sprite_ext(weapon.sprite, 0, x + _xOffset, centerY + _yOffset, 1, _weaponYscl, aimDir, c_white,1);
+	draw_sprite_ext(weapon.sprite, 0, centerX + _xOffset, centerY + _yOffset, 1, _weaponYscl, aimDir, c_white,1);
 
 }
 
@@ -169,13 +169,13 @@ function upgrade_menu() {
     // spawn upgrade menu
     var _options = [
         ["Max player HP ($5)", maxPlayerHP],
-        ["Bullets per shot ($10)", increaseBullets],
+        ["Bullets per shot ($20)", increaseBullets],
         ["Weapon cooldown ($5)", weaponCooldown],
         ["Max ship HP ($10)", maxShipHP],
-        ["Ship turret ($10)", shipTurret],
-        ["Ship shield ($10)", shipShield],
-        ["Recover player HP ($3)", -1],
-        ["Recover ship HP ($5)", -1],
+        ["Ship turret ($20)", shipTurret],
+        //["Ship shield ($10)", shipShield],
+        ["Recover player HP ($3)", recoverPlayerHP],
+        ["Recover ship HP ($5)", recoverShipHP],
         ["Next wave", start_wave]
     ];
     var camerax = camera_get_view_x(view_camera[0]);
@@ -201,57 +201,158 @@ function start_wave() {
     
     //reset global vars
     global.currentWave++;
-    global.enemiesToSpawn = 10 + global.currentWave*5;
-    global.enemiesToKill = 10 + global.currentWave*5;
+    global.enemiesToSpawn = 10 + floor(power(global.currentWave, 3));
+    global.enemiesToKill = 10 + floor(power(global.currentWave, 3));
+    if global.currentWave == 5 {
+        // account for boss
+        enemySpawner_Object.alarm[3] = 1000; 
+        
+    }
     
     //start spawning enemies again
+    enemySpawner_Object.spawnInterval = enemySpawner_Object.defaultInterval;
+    enemySpawner_Object.spedUp = false;
     enemySpawner_Object.alarm[0] = enemySpawner_Object.spawnInterval;
     
     global.betweenRounds = false;
+    
+    //TODO change bgm
 }
 
 #endregion
 
 #region upgrades
-//TODO: implement upgrades
 
 //refilling the player's HP
 function maxPlayerHP() {
-
-	player_Object.hp = 100; //player hp back to 100
+    
+    if (global.scrapCount >= 5) {
+        //decrease scrap
+        global.scrapCount -= 5;
+        //TODO add sfx
+        //increase max hp
+	    player_Object.maxHP += 20;
+        player_Object.hp += 20;
+    }
 }
 
 function increaseBullets() {
 	
-	//increase the number of bullets I believe
-	player_Object.bulletCount = min(player_Object.bulletCount + 1, 5); // Limit max bullets (adjust as needed)
-	
+    if (global.scrapCount >= 20) && (player_Object.bulletCount < 5) {
+        //decrease scrap
+        global.scrapCount -= 20;
+        //TODO add sfx
+	    //increase the number of bullets I believe
+	    player_Object.bulletCount = min(player_Object.bulletCount + 1, 5); // Limit max bullets (adjust as needed)
+    } else { 
+        //TODO play "you can't select this" sfx
+    }
 }
 
 function weaponCooldown() {
 
-	//Decrease the weapon Cooldown so that the player can shoot faster
-	draw_text(player_Object.x, player_Object.y, string(player_Object.wCooldown));
-	player_Object.wCooldown -= 5; //this does not seem to be working
-	player_Object.weapon.cooldown = player_Object.wCooldown;
+    if (global.scrapCount >= 5) && (player_Object.wCooldown > 3) {
+        // decrease scrap
+        global.scrapCount -= 5;
+        //TODO add a sound effect
+       	//Decrease the weapon Cooldown so that the player can shoot faster
+       	draw_text(player_Object.x, player_Object.y, string(player_Object.wCooldown));
+       	player_Object.wCooldown -= 4; //this does not seem to be working
+       	player_Object.weapon.cooldown = player_Object.wCooldown;
+    } else {
+        //TODO play "you can't select this" sfx
+    }
 }
 
 function maxShipHP() {
 
-	ship_Object.hp = 500; //ship hp back to 500
+    if (global.scrapCount >= 10) {
+        //decrease scrap
+        global.scrapCount -= 10;
+        //TODO add sfx
+        //upgrade ship
+        ship_Object.maxHP += 100;
+        ship_Object.hp += 100;
+    } else {
+        //TODO play "you can't select this" sfx
+    }
 }
 
 function shipTurret() {
 
-	//add ship turret
+    if (global.scrapCount >= 20) && (ship_Object.wCooldown > 5) {
+        //decrease scrap
+        global.scrapCount -= 20;
+        //TODO add sfx
+        //TODO add ship turret
+        if !ship_Object.turretUnlocked {
+            ship_Object.turretUnlocked = true;
+        } else {
+            ship_Object.wCooldown -= 15;
+        }
+    } else {
+        //TODO play "you can't select this" sfx
+    }
 }
 
 function shipShield() {
-	//add ship shield
+	
+    if (global.scrapCount >= 10) {
+        //decrease scrap
+        global.scrapCount -= 10;
+        //TODO add sfx
+        //TODO add ship shield
+    } else {
+        //TODO play "you can't select this" sfx
+    }
+}
+
+function recoverPlayerHP() {
+    if (global.scrapCount >= 3) {
+        //decrease scrap
+        global.scrapCount -= 3;
+        //TODO add sfx
+        //heal player
+        player_Object.hp += 20;
+        //make sure their hp doesn't exceed the max
+        if (player_Object.hp > player_Object.maxHP) {
+            player_Object.hp = player_Object.maxHP;
+        }
+    } else {
+        //TODO play "you can't select this" sfx
+    }
+}
+
+function recoverShipHP() {
+    if (global.scrapCount >= 5) {
+            //decrease scrap
+            global.scrapCount -= 5;
+            //TODO add sfx
+            //heal player
+            ship_Object.hp += 100;
+            //make sure their hp doesn't exceed the max
+            if (ship_Object.hp > ship_Object.maxHP) {
+                ship_Object.hp = ship_Object.maxHP;
+            }
+        } else {
+            //TODO play "you can't select this" sfx
+        }
+}
+
+#endregion
+
+///@desc display the controls in the main menu
+function viewControls() {
+    // get rid of the other menu
+    while instance_exists(menu_Object) {
+        instance_destroy(menu_Object);
+    }
+    var _info = "Controls\n- Move: WASD keys\n- Aim: mouse\n- Shoot: left mouse button\n- Dash: spacebar";
+    Menu(400, 250, [["Start", room_goto_next]], _info);
+    with menu_Object {
+        heightLine *= 6.2;
+        heightFull *= 2.8;
+    }
 }
 
 
-
-
-
-#endregion

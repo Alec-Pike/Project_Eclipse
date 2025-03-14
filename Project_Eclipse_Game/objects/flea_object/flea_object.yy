@@ -10,11 +10,10 @@
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"EnemyParent_Object","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"propertyId":{"name":"move_speed","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"3",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"EnemyParent_Object","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"propertyId":{"name":"startingHP","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"10",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"EnemyParent_Object","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"propertyId":{"name":"right_sprite","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"resource":{"name":"flea_sprite","path":"sprites/flea_sprite/flea_sprite.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"flea_sprite",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"EnemyParent_Object","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"propertyId":{"name":"up_sprite","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"resource":{"name":"flea_sprite","path":"sprites/flea_sprite/flea_sprite.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"flea_sprite",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"EnemyParent_Object","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"propertyId":{"name":"down_sprite","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"resource":{"name":"flea_sprite","path":"sprites/flea_sprite/flea_sprite.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"flea_sprite",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"EnemyParent_Object","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"propertyId":{"name":"right_sprite","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"resource":{"name":"fleaSide_Sprite","path":"sprites/fleaSide_Sprite/fleaSide_Sprite.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"fleaSide_Sprite",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"EnemyParent_Object","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"propertyId":{"name":"up_sprite","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"resource":{"name":"fleaUp_Sprite","path":"sprites/fleaUp_Sprite/fleaUp_Sprite.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"fleaUp_Sprite",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"EnemyParent_Object","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"propertyId":{"name":"down_sprite","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"resource":{"name":"fleaDown_sprite","path":"sprites/fleaDown_sprite/fleaDown_sprite.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"fleaDown_sprite",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"EnemyParent_Object","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"propertyId":{"name":"stopDistance","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"-1",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"EnemyParent_Object","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"propertyId":{"name":"explosion_effect","path":"objects/EnemyParent_Object/EnemyParent_Object.yy",},"resource":{"name":"HarmfulExplosion_Object","path":"objects/HarmfulExplosion_Object/HarmfulExplosion_Object.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"HarmfulExplosion_Object",},
   ],
   "parent":{
     "name":"enemies",
@@ -42,8 +41,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"flea_sprite",
-    "path":"sprites/flea_sprite/flea_sprite.yy",
+    "name":"fleaDown_sprite",
+    "path":"sprites/fleaDown_sprite/fleaDown_sprite.yy",
   },
   "spriteMaskId":null,
   "visible":true,

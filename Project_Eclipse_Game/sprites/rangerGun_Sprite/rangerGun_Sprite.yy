@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"enemies",
-    "path":"folders/Sprites/enemies.yy",
+    "name":"ranger",
+    "path":"folders/Sprites/enemies/ranger.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

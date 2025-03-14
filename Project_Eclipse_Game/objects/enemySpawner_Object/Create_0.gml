@@ -5,7 +5,7 @@ enemies = [
     rover_Object, 
     flea_object
 ];
-spawnInterval = 300;
+spawnInterval = defaultInterval;
 spedUp = false;
 alarm[0] = spawnInterval;
 

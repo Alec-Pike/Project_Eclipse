@@ -9,9 +9,10 @@ if (hp <= 0) {
 // move
 // This line moves the enemy move_speed steps towards the goal
 // while avoiding all obstacles.
-if (instance_exists(goal)) && (distance_to_object(goal) > stopDistance) {
+if (instance_exists(goal)) && (distance_to_object(goal) > stopDistance && state == "walk") {
     mp_potential_step(goal.x, goal.y, move_speed, false);
-}
+    idling = false;
+} 
 
 //sprite control
 #region
@@ -28,11 +29,15 @@ if (instance_exists(goal)) && (distance_to_object(goal) > stopDistance) {
     }    
 
     //animate
-    //    if (!instance_exists(goal)) || (distance_to_object(goal) <= stopDistance) {
-    //        image_index = 0; //if enemy no move, the current sprite stays in frame 1, which does not move because it's a still image
-    //    }
+    if state == "walk" {
+        if (instance_exists(goal)) && (distance_to_object(goal) <= stopDistance) && idling {
+            sprite_index = idle[face];
+        } else {
+            //set the enemy sprite
+            mask_index = sprite[3];
+            sprite_index = sprite[face]; 
+        }
+    }
     
-    //set the enemy sprite
-    mask_index = sprite[3];
-    sprite_index = sprite[face];
+    
 #endregion
