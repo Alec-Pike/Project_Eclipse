@@ -340,7 +340,7 @@ function recoverShipHP() {
 }
 
 #endregion
-
+/*
 ///@desc display the controls in the main menu
 function viewControls() {
     // get rid of the other menu
@@ -354,5 +354,5 @@ function viewControls() {
         heightFull *= 2.8;
     }
 }
-
+*/
 

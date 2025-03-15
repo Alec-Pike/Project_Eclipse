@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"TitleScreen_Sprite",
   "bboxMode":0,
-  "bbox_bottom":681,
+  "bbox_bottom":575,
   "bbox_left":0,
   "bbox_right":1023,
   "bbox_top":0,
@@ -10,7 +10,7 @@
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
-  "For3D":false,
+  "For3D":true,
   "frames":[
     {"$GMSpriteFrame":"","%Name":"0e2164e3-141d-4a02-8544-46dfd0fce0a1","name":"0e2164e3-141d-4a02-8544-46dfd0fce0a1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"c80304ac-ce38-4260-8ccd-529491b8bd94","name":"c80304ac-ce38-4260-8ccd-529491b8bd94","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
@@ -30,7 +30,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":682,
+  "height":576,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"e884d436-0f33-49a4-bbb3-c7bff0db4e12","blendMode":0,"displayName":"default","isLocked":false,"name":"e884d436-0f33-49a4-bbb3-c7bff0db4e12","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},

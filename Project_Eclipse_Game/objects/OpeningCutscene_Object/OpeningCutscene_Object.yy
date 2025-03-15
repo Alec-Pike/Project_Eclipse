@@ -1,21 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"OpeningCutscene_Object",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":70,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":32,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"OpeningCutscene_object",
+  "eventList":[],
   "managed":true,
-  "name":"OpeningCutscene_Object",
-  "overriddenProperties":[],
+  "name":"OpeningCutscene_object",
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"CutsceneDisplay_Object","path":"objects/CutsceneDisplay_Object/CutsceneDisplay_Object.yy",},"propertyId":{"name":"videoFile","path":"objects/CutsceneDisplay_Object/CutsceneDisplay_Object.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"OpeningCutscene.MP4\"",},
+  ],
   "parent":{
-    "name":"clerical",
-    "path":"folders/Objects/clerical.yy",
+    "name":"cutscenes",
+    "path":"folders/Objects/clerical/cutscenes.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"CutsceneDisplay_Object",
+    "path":"objects/CutsceneDisplay_Object/CutsceneDisplay_Object.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

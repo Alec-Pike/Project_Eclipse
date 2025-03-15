@@ -4,6 +4,6 @@ if (global.enemiesToKill <= 0) && (global.currentWave < 5) {
 } else {
     // victory screen
 	if (global.currentWave >= 5 && global.enemiesToKill <= 0) { 
-		room_goto(EndScreen); 
+		room_goto(CreditsScreen); 
 	}
 }
