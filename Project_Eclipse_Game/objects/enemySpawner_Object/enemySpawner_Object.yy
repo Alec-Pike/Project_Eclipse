@@ -12,8 +12,8 @@
   "name":"enemySpawner_Object",
   "overriddenProperties":[],
   "parent":{
-    "name":"clerical",
-    "path":"folders/Objects/clerical.yy",
+    "name":"managers",
+    "path":"folders/Objects/clerical/managers.yy",
   },
   "parentObjectId":null,
   "persistent":false,

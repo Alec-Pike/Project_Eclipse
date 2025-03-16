@@ -32,7 +32,7 @@ if global.enemiesToSpawn > 0 {
     }
     
     // spawns get faster towards the end of the wave
-    if (global.enemiesToKill < global.currentWave*4) && (!spedUp) {
+    if (global.enemiesToKill < (10 + floor(power(global.currentWave, 3)))/4 && (!spedUp)) {
         spawnInterval = floor(spawnInterval * 2/3);
         spedUp = true;
     }

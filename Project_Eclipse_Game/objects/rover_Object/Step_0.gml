@@ -6,7 +6,7 @@ event_inherited();
 if instance_exists(goal) {
     
     //decrement timer
-    if attackTimer > 0
+    if attackTimer > 0 && state == "walk"
     {
     	attackTimer--;
          idling = true;
@@ -20,27 +20,40 @@ if instance_exists(goal) {
         sprite_index = attacking[face];
         image_index = 0;
         
-        var _rocket = instance_create_depth(x,y,depth+100,roverRocket_Object);
-        with (_rocket) {
-            dir = 90;//straight up
-        }
+        attackTimer = attackInterval;
+        shootTimer = weapon.cooldown;
     }
     
     if state == "attacking" {
         if shootTimer > 0 {
             shootTimer--;
         } else {
-            
-             //reset the timer
+            //reset the timer
              shootTimer = weapon.cooldown;
-             //shooting	        
-             instance_create_depth(goal.x, goal.y, depth-100, weapon.bulletObj);
+            
+            // calculate mortar position
+            var _xoffset = 0;
+            if face % 2 == 0 { // if facing to the side
+                _xoffset = -15 * image_xscale;
+            }
+            
+            //fire rocket
+            var _rocket = instance_create_depth(x+_xoffset,y-25,depth+100,roverRocket_Object);
+            with (_rocket) {
+                dir = 90;//straight up
+            }
+             
+             //place target	        
+             var _target = instance_create_depth(goal.x, goal.y, depth-100, weapon.bulletObj);
+            with _target {
+                targetGoal = other.goal;
+            }
             
             //end of attack
                     sprite_index = sprite[face];
                     image_index = 0;
                     state = "walk";
-                    attackTimer = attackInterval;
+                    
         }
     }
 }

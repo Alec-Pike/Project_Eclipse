@@ -1,1 +1,2 @@
-room_goto_next();
+numSoundsPlayed = 4;
+room_goto(OpeningCutscene);

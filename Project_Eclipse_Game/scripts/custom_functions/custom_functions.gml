@@ -146,9 +146,9 @@ function draw_my_weapon()
 ///@desc used for processing the end of each wave of enemies
 function end_wave() {
     
-    //TODO: sound effect here?
-    
-    //TODO: change bgm
+    //change bgm
+    audio_stop_all();
+    audio_play_sound(UpgradeMenuTheme_Sound,1,true);
     
     //graphics display helpers
     var camerax = camera_get_view_x(view_camera[0]);
@@ -186,7 +186,6 @@ function upgrade_menu() {
 
 ///@desc used for starting the next wave
 function start_wave() {
-    //TODO: fade screen
         
     // reset player position
     if instance_exists(player_Object) {
@@ -205,7 +204,7 @@ function start_wave() {
     global.enemiesToKill = 10 + floor(power(global.currentWave, 3));
     if global.currentWave == 5 {
         // account for boss
-        enemySpawner_Object.alarm[3] = 1000; 
+        enemySpawner_Object.alarm[3] = 3500; 
         
     }
     
@@ -216,7 +215,9 @@ function start_wave() {
     
     global.betweenRounds = false;
     
-    //TODO change bgm
+    // change bgm
+    audio_stop_all();
+    audio_play_sound(LevelTheme_Sound,1,true);
 }
 
 #endregion
@@ -229,10 +230,14 @@ function maxPlayerHP() {
     if (global.scrapCount >= 5) {
         //decrease scrap
         global.scrapCount -= 5;
-        //TODO add sfx
+        //play sfx
+        audio_play_sound(SelectQuit_Sound, 2, false);
         //increase max hp
 	    player_Object.maxHP += 20;
         player_Object.hp += 20;
+    } else { 
+        // play "you can't select this" sfx
+        audio_play_sound(SelectStart_Sound,2,false);
     }
 }
 
@@ -241,11 +246,13 @@ function increaseBullets() {
     if (global.scrapCount >= 20) && (player_Object.bulletCount < 5) {
         //decrease scrap
         global.scrapCount -= 20;
-        //TODO add sfx
+        //play sfx 
+        audio_play_sound(SelectQuit_Sound, 2, false);
 	    //increase the number of bullets I believe
 	    player_Object.bulletCount = min(player_Object.bulletCount + 1, 5); // Limit max bullets (adjust as needed)
     } else { 
-        //TODO play "you can't select this" sfx
+        // play "you can't select this" sfx
+        audio_play_sound(SelectStart_Sound,2,false);
     }
 }
 
@@ -254,13 +261,15 @@ function weaponCooldown() {
     if (global.scrapCount >= 5) && (player_Object.wCooldown > 3) {
         // decrease scrap
         global.scrapCount -= 5;
-        //TODO add a sound effect
+        //play sfx 
+        audio_play_sound(SelectQuit_Sound, 2, false);
        	//Decrease the weapon Cooldown so that the player can shoot faster
        	draw_text(player_Object.x, player_Object.y, string(player_Object.wCooldown));
        	player_Object.wCooldown -= 4; //this does not seem to be working
        	player_Object.weapon.cooldown = player_Object.wCooldown;
     } else {
-        //TODO play "you can't select this" sfx
+        // play "you can't select this" sfx
+        audio_play_sound(SelectStart_Sound,2,false);
     }
 }
 
@@ -269,12 +278,14 @@ function maxShipHP() {
     if (global.scrapCount >= 10) {
         //decrease scrap
         global.scrapCount -= 10;
-        //TODO add sfx
+        //play sfx
+        audio_play_sound(SelectQuit_Sound, 2, false);
         //upgrade ship
         ship_Object.maxHP += 100;
         ship_Object.hp += 100;
     } else {
-        //TODO play "you can't select this" sfx
+        // play "you can't select this" sfx
+        audio_play_sound(SelectStart_Sound,2,false);
     }
 }
 
@@ -283,18 +294,20 @@ function shipTurret() {
     if (global.scrapCount >= 20) && (ship_Object.wCooldown > 5) {
         //decrease scrap
         global.scrapCount -= 20;
-        //TODO add sfx
-        //TODO add ship turret
+        //play sfx
+        audio_play_sound(SelectQuit_Sound, 2, false);
+        // add ship turret
         if !ship_Object.turretUnlocked {
             ship_Object.turretUnlocked = true;
         } else {
             ship_Object.wCooldown -= 15;
         }
     } else {
-        //TODO play "you can't select this" sfx
+        // play "you can't select this" sfx
+        audio_play_sound(SelectStart_Sound,2,false);
     }
 }
-
+/*
 function shipShield() {
 	
     if (global.scrapCount >= 10) {
@@ -306,12 +319,13 @@ function shipShield() {
         //TODO play "you can't select this" sfx
     }
 }
-
+*/
 function recoverPlayerHP() {
     if (global.scrapCount >= 3) {
         //decrease scrap
         global.scrapCount -= 3;
-        //TODO add sfx
+        //play sfx
+        audio_play_sound(SelectQuit_Sound, 2, false);
         //heal player
         player_Object.hp += 20;
         //make sure their hp doesn't exceed the max
@@ -319,7 +333,8 @@ function recoverPlayerHP() {
             player_Object.hp = player_Object.maxHP;
         }
     } else {
-        //TODO play "you can't select this" sfx
+        // play "you can't select this" sfx
+        audio_play_sound(SelectStart_Sound,2,false);
     }
 }
 
@@ -327,16 +342,18 @@ function recoverShipHP() {
     if (global.scrapCount >= 5) {
             //decrease scrap
             global.scrapCount -= 5;
-            //TODO add sfx
+            //play sfx
+            audio_play_sound(SelectQuit_Sound, 2, false);
             //heal player
             ship_Object.hp += 100;
             //make sure their hp doesn't exceed the max
             if (ship_Object.hp > ship_Object.maxHP) {
                 ship_Object.hp = ship_Object.maxHP;
             }
-        } else {
-            //TODO play "you can't select this" sfx
-        }
+    } else {
+            // play "you can't select this" sfx
+            audio_play_sound(SelectStart_Sound,2,false);
+    }
 }
 
 #endregion

@@ -1,13 +1,15 @@
 {
   "$GMObject":"",
   "%Name":"EnemyExplosionMedium_Object",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"EnemyExplosionMedium_Object",
   "overriddenProperties":[],
   "parent":{
-    "name":"sfx",
-    "path":"folders/Objects/sfx.yy",
+    "name":"vfx",
+    "path":"folders/Objects/vfx.yy",
   },
   "parentObjectId":{
     "name":"specialEffectParent_Object",

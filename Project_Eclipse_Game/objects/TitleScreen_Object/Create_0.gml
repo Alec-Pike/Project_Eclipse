@@ -6,3 +6,4 @@ global.enemiesToSpawn = 11;
 global.enemiesToKill = 11;
 
 
+numSoundsPlayed = 0;

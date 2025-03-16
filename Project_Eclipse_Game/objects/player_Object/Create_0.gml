@@ -53,7 +53,7 @@ idle[3] = idleMain_Sprite;
 	defaultGun = {
 		
 		sprite : gun_Sprite, //all these variables belong to the 'weapon' struct
-		length : sprite_get_bbox_right(gun_Sprite),
+		length : sprite_get_bbox_right(gun_Sprite)+15,
 		bulletObj : bullet_Object,
 		cooldown : wCooldown,
 		

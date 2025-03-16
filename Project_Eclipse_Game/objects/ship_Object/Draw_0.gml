@@ -3,7 +3,7 @@
     {
         draw_my_weapon();
     }*/
-
+depth = -bbox_bottom;
 //draw the ship
 draw_self();
 

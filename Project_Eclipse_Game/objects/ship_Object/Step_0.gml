@@ -35,7 +35,7 @@ if (!global.betweenRounds) {
                    //create the bullet
                    var _xOffset = lengthdir_x(weapon.length + weaponOffsetDist, aimDir);
                    var _yOffset = lengthdir_y(weapon.length + weaponOffsetDist, aimDir);
-                   var _bulletInst = instance_create_depth(x + _xOffset,centerY + _yOffset, depth-100, weapon.bulletObj);
+                   var _bulletInst = instance_create_depth(centerX+_xOffset,centerY+_yOffset, depth-100, weapon.bulletObj);
                    //creating an instance of a bullet object
                    //and storing it's unique ID in _bulletInst
                    

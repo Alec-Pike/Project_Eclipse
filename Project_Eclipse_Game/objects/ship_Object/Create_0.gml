@@ -8,7 +8,7 @@ centerY = y + centerYOffset; //set in step event, we need to get this dynamicall
 centerXOffset = -33; 
 centerX = x + centerXOffset; 
 
-weaponOffsetDist = 3;
+weaponOffsetDist = 0;
 aimDir = 0;
 
 turretUnlocked = false;

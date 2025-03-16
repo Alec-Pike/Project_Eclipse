@@ -1,1 +1,1 @@
-instance_create_layer(x, y+sprite_yoffset/2, "Instances", PlayerExplosion_Object);
+instance_create_layer(x, y-sprite_yoffset/2, "Instances", PlayerExplosion_Object);

@@ -8,8 +8,8 @@
   "name":"dodgeDust_Object",
   "overriddenProperties":[],
   "parent":{
-    "name":"sfx",
-    "path":"folders/Objects/sfx.yy",
+    "name":"vfx",
+    "path":"folders/Objects/vfx.yy",
   },
   "parentObjectId":{
     "name":"specialEffectParent_Object",

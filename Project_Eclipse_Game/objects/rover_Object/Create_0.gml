@@ -1,6 +1,6 @@
 // Inherit the parent event
 event_inherited();
-attackInterval = 100;
+attackInterval = 200;
 attackTimer = attackInterval;
 shootTimer = 0;
 	
